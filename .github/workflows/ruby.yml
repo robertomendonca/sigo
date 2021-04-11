@@ -35,7 +35,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: install PostgreSQL client
-      run: sudo apt-get install libpq-dev
+      run: sudo apt-get -yqq install libpq-dev
       
     - name: Build and create DB
       env:

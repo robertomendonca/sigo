@@ -35,6 +35,8 @@ jobs:
     steps:
     - name: uninstall all ruby
       run: sudo apt-get remove ruby
+    - name: Install all ruby
+      run: sudo apt-get install ruby
     - uses: actions/checkout@v2
     - name: install PostgreSQL client
       run: sudo apt-get -yqq install libpq-dev

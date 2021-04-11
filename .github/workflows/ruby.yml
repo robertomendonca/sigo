@@ -33,6 +33,8 @@ jobs:
         ruby-version: ['2.7.1']
 
     steps:
+    - name: uninstall all ruby
+      run: sudo apt-get remove ruby
     - uses: actions/checkout@v2
     - name: install PostgreSQL client
       run: sudo apt-get -yqq install libpq-dev

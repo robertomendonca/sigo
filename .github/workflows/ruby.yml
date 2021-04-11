@@ -45,11 +45,11 @@ jobs:
         PGUSER: postgres
         PGPORT: ${ { job.services.postgres.ports[5432] }} # get randomly assigned published port
         RAILS_ENV: test
-  run: |
-    gem install bundler
-    bundle config path vendor/bundle
-    bundle install --jobs 4 --retry 3
-    bin/rails db:setup
+      run: |
+        gem install bundler
+        bundle config path vendor/bundle
+        bundle install --jobs 4 --retry 3
+        bin/rails db:setup
     
     - name: Set up Ruby
     # To automatically get bug fixes and new Ruby versions for ruby/setup-ruby,

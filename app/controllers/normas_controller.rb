@@ -1,4 +1,5 @@
 class NormasController < ApplicationController
+  before_action :authenticate_user!
   load_and_authorize_resource
   before_action :set_norma, only: %i[ show update destroy ]
 
@@ -19,6 +20,7 @@ class NormasController < ApplicationController
   # GET /normas.json
   def index
     @normas = Norma.all
+    render json: @normas
   end
 
   # GET /normas/1

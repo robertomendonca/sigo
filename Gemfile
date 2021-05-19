@@ -30,6 +30,7 @@ gem 'apipie-rails'
 
   gem 'rspec-rails'
   gem 'rswag-specs'
+ 
 
 
 gem 'graphiti'

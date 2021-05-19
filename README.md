@@ -1,9 +1,7 @@
 # README
+SIGO BackEnd Para Demo
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
+Esse sistema realiza algumas atividades:
 
 * Ruby version
 
@@ -22,3 +20,6 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+
+Other point of test
